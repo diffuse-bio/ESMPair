@@ -1,7 +1,6 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-
 RUN apt-get install -y wget && apt-get install -y git build-essential libssl-dev
 
 # install conda
@@ -13,7 +12,10 @@ RUN wget \
     && bash Miniconda3-latest-Linux-x86_64.sh -b \
     && rm -f Miniconda3-latest-Linux-x86_64.sh
 
-RUN conda install pytorch==2.0.1 torchvision pytorch-cuda=11.7 fair-esm absl-py dm-tree -c pytorch -c nvidia -c conda-forge
+# install dependecies
+COPY requirements.txt ./
+RUN python -m pip install -r requirements.txt
+# RUN conda install pytorch=2.0.1 torchvision pytorch-cuda=11.7 fair-esm absl-py dm-tree -c pytorch -c nvidia -c conda-forge
 
 # installing google cloud SDK
 RUN wget -q https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-386.0.0-linux-x86_64.tar.gz
