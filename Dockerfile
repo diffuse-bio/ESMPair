@@ -41,4 +41,4 @@ RUN python -m pip install -e .
 
 WORKDIR /app/ESMPair
 
-ENTRYPOINT ["python", "colattn_pair.py", "./dataset", "0" ]
+# ENTRYPOINT ["python", "colattn_pair.py", "./dataset", "0" ]
