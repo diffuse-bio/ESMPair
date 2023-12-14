@@ -1,11 +1,8 @@
 torch
 torchvision
-# pytorch-cuda
 fair-esm 
 absl-py 
 dm-tree
-# nvidia
-# conda-forge
 fair-esm
 sympy
 absl-py
