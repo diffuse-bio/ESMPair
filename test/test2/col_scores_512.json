@@ -1,0 +1,16 @@
+{
+    "A": {
+        "0": {
+            "block_num": -1,
+            "description": "PI001B354B1B  unclassified [subseq from] unknown protein n=0 Tax=unknown TaxID=12908 RepID=123_unknown",
+            "score": 1000000.0
+        }
+    },
+    "B": {
+        "0": {
+            "block_num": -1,
+            "description": "PI0005110DC5  cellular_organisms [subseq from] unknown protein n=0 Tax=unknown TaxID=131567 RepID=123_unknown",
+            "score": 1000000.0
+        }
+    }
+}
