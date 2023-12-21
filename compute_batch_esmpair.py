@@ -103,7 +103,7 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
 
         msa_upload_mgr = MSAUploadManager(folder=batch_folder, gcs_path='data/msas/server_msas/esmpair/')
         batch_idx = int(batch_folder[batch_folder.rfind('/')+1:])
-        sp.call(f"python3 compute_esmpair.py {batch_folder}", shell=True)
+        sp.call(f"python3 run_esmpair.py {batch_folder}", shell=True)
         msa_upload_mgr.batch_upload()
         shutil.rmtree(tmp_dir)
         
