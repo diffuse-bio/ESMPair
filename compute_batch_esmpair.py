@@ -42,10 +42,10 @@ TODOs:
 -- test docker image locally. you can run all of the commands individually
 -- test submitting to gbatch
 
-2) download Docker image gcr.io/diffuse-370214/gcr.io/diffuse-370214/esmpair:v0.2
-3) run docker image in interactive mode
-    sudo docker -it gcr.io/diffuse-370214/gcr.io/diffuse-370214/esmpair:v0.2
-4) test locally
+1) sudo docker pull gcr.io/diffuse-370214/esmpair:v0.2
+2) run docker image in interactive mode
+    sudo docker -it gcr.io/diffuse-370214/esmpair:v0.2
+3) test locally inside docker container
     source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python
     pip install google-cloud-storage (added to requirements.txt, but did not rebuild docker image yet)
     cd /ESMPair
@@ -54,8 +54,7 @@ TODOs:
 
 """
 
-# PATH_TO_DB = "/mnt/disks/colabfold-dbs/" #uniref30_2302 #/mnt/sdc/uniref30_2103/"
-PATH_TO_DOCKER_IMG = "gcr.io/diffuse-370214/diffuse-mmseqs-server:v0.5" #gcr.io/diffuse-370214/diffuse-mmseqs:0.1"
+PATH_TO_DOCKER_IMG = "gcr.io/diffuse-370214/esmpair:v0.2" 
 
 def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, batch_size: int, overwrite=False, threshold=10000):
     
@@ -106,11 +105,10 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
         batch_idx = int(batch_folder[batch_folder.rfind('/')+1:])
         sp.call(f"python3 run_esmpair.py {batch_folder}", shell=True)
         msa_upload_mgr.batch_upload()
-        #! DEBUG
-        # shutil.rmtree(tmp_dir)
+        shutil.rmtree(tmp_dir)
         
 
-def return_batch_json(num_workers: int, input_txt: str, batch_size: int, tofile: bool): #, num_workers: List[int]):
+def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num_workers: List[int]):
     # get batch script to run parallel jobs
     
     # upload workspace
@@ -131,7 +129,7 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int, tofile:
                                 "imageUri": "{path_to_docker_img}",
                                 "entrypoint": "/bin/bash",
                                 "commands": ["-c",
-                                            " source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python && gsutil -m cp gs://{gcs_bucket}/workspaces/{workspace}    . && tar -xvzf {workspace}  &&  bash paired_msa/msa_startup.sh  &&  cd paired_msa  &&  python /paired_msa/compute_msas_server.py  $BATCH_TASK_INDEX $BATCH_TASK_COUNT -i {txt} -b {batch_size}"
+                                            " source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python && gsutil -m cp gs://{gcs_bucket}/workspaces/{workspace}    . && tar -xvzf {workspace}  &&  pip install google-cloud-storage  &&  cd /ESMPair  &&  python /ESMPair/compute_batch_esmpair.py  $BATCH_TASK_INDEX $BATCH_TASK_COUNT -i {txt} -b {batch_size}"
                                 ]
                                 
 
@@ -166,7 +164,7 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int, tofile:
                 {{
                     "policy": {{
                         "machineType": "n1-standard-64",
-                        "provisioningModel": "SPOT",
+                        "provisioningModel": "SPOT"
                     }}
                 }}
             ],

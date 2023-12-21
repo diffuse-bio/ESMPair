@@ -86,7 +86,7 @@ def setup_and_upload_workspace(
         assert "_" not in unique_run_name
 
     current_dir = os.path.split(os.getcwd())
-    assert current_dir[-1] == "paired_msa", current_dir
+    assert current_dir[-1] == "ESMPair", current_dir
 
     assert all(e not in unique_run_name for e in ("/", ".", ":")), (
         "No special characters allowed in %s" % unique_run_name
