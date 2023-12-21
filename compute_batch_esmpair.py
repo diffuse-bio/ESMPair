@@ -44,7 +44,7 @@ TODOs:
 
 1) sudo docker pull gcr.io/diffuse-370214/esmpair:v0.2
 2) run docker image in interactive mode
-    sudo docker -it gcr.io/diffuse-370214/esmpair:v0.2
+    sudo docker run -it gcr.io/diffuse-370214/esmpair:v0.2
 3) test locally inside docker container
     source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python
     pip install google-cloud-storage (added to requirements.txt, but did not rebuild docker image yet)
@@ -129,7 +129,7 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num
                                 "imageUri": "{path_to_docker_img}",
                                 "entrypoint": "/bin/bash",
                                 "commands": ["-c",
-                                            " source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python && gsutil -m cp gs://{gcs_bucket}/workspaces/{workspace}    . && tar -xvzf {workspace}  &&  pip install google-cloud-storage  &&  cd /ESMPair  &&  python /ESMPair/compute_batch_esmpair.py  $BATCH_TASK_INDEX $BATCH_TASK_COUNT -i {txt} -b {batch_size}"
+                                            " source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python && cd / && gsutil -m cp gs://{gcs_bucket}/workspaces/{workspace} . && tar -xvzf {workspace} && cd ESMPair &&  python compute_batch_esmpair.py  $BATCH_TASK_INDEX $BATCH_TASK_COUNT -i {txt} -b {batch_size}"
                                 ]
                                 
 
@@ -138,8 +138,8 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num
                         
                     ],
                     "computeResource": {{
-                        "cpuMilli": 63500,
-                        "memoryMib": 239500
+                        "cpuMilli": 7500,
+                        "memoryMib": 29500
                     }},
                     "maxRetryCount": 1
                 }},
@@ -163,7 +163,7 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num
             "instances": [
                 {{
                     "policy": {{
-                        "machineType": "n1-standard-64",
+                        "machineType": "n1-standard-8",
                         "provisioningModel": "SPOT"
                     }}
                 }}

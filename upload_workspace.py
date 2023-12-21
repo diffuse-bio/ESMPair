@@ -16,7 +16,7 @@ logger.setLevel(logging.INFO)
 
 ARCHIVE_COMMAND_TEMPLATE = """
 cd '{workspace}';
-find -L $(ls --color=none paired_msa|xargs -I @ echo paired_msa/@) \
+find -L $(ls --color=none ESMPair|xargs -I @ echo ESMPair/@) \
     ! -iname '*.avi' \
     ! -iname '*.bmp' \
     ! -iname '*.pcd' \
