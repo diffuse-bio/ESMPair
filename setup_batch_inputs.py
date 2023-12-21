@@ -16,7 +16,7 @@ def setup_batch_inputs(input_txt: str, batch_size: int, folder: str):
         input_ppis = f.readlines()
         input_ppis = [i.strip().split('\t') for i in input_ppis]
     
-    # distribute PPIs into batches (each batch is a new directory), and pulls each pair of paralog.a3m files to a subfolder inside the batch
+    # distribute PPIs into batches (each batch is a new directory), and names each pair idA=idB_1.a3m and idA=idB_2.a3m
     os.mkdir(f'{folder}/esmpair_out')
     c = 0
     new_path = ''
@@ -30,11 +30,9 @@ def setup_batch_inputs(input_txt: str, batch_size: int, folder: str):
         blob_B = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_B}.paralog.a3m')
         if blob_A.exists() and blob_B.exists():
             # copy these blobs to subdir_path
-            subfolder_path = f'{subdir_path}/{id_A}_{id_B}'
-            os.mkdir(subfolder_path)
-            with open(f'{subfolder_path}/{id_A}.paralog.a3m', 'w') as f:
+            with open(f'{subdir_path}/{id_A}={id_B}_1.a3m', 'w') as f:
                 f.write(blob_A.open('r').read())
-            with open(f'{subfolder_path}/{id_B}.paralog.a3m', 'w') as f:
+            with open(f'{subdir_path}/{id_A}={id_B}_2.a3m', 'w') as f:
                 f.write(blob_B.open('r').read())
 
         c += 1

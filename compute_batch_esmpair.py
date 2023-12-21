@@ -47,9 +47,9 @@ TODOs:
     sudo docker -it gcr.io/diffuse-370214/gcr.io/diffuse-370214/esmpair:v0.2
 4) test locally
     source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python
-
-    cd ESMPair
-    python run_esmpair.py ...
+    pip install google-cloud-storage (added to requirements.txt, but did not rebuild docker image yet)
+    cd /ESMPair
+    python compute_batch_esmpair.py 0 1 -i test_input.txt
     
 
 """
@@ -71,6 +71,7 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
     
     # filter out PPIs that do not have paralogs
     possible_ppis = []
+    print(input_ppis)
     for id_A, id_B in input_ppis:
         blob_A = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_A}.paralog.a3m')
         blob_B = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_B}.paralog.a3m')
@@ -86,7 +87,7 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
     tmp_dir = tempfile.mkdtemp() 
     # tmp_dirname = tmp_dir.name
     #  save unique PPIs to separate txt files under new folders   
-    lookup_idx_dict = setup_batch_inputs(input_txt, batch_size, folder=tmp_dir)
+    setup_batch_inputs(input_txt, batch_size, folder=tmp_dir)
     os.remove(input_txt)
 
     seq_batch_folders = glob.glob(f'{tmp_dir}/esmpair_out/*')
@@ -105,7 +106,8 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
         batch_idx = int(batch_folder[batch_folder.rfind('/')+1:])
         sp.call(f"python3 run_esmpair.py {batch_folder}", shell=True)
         msa_upload_mgr.batch_upload()
-        shutil.rmtree(tmp_dir)
+        #! DEBUG
+        # shutil.rmtree(tmp_dir)
         
 
 def return_batch_json(num_workers: int, input_txt: str, batch_size: int, tofile: bool): #, num_workers: List[int]):

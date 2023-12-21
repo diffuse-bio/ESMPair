@@ -7,3 +7,4 @@ fair-esm
 sympy
 absl-py
 tqdm
+google-cloud-storage
