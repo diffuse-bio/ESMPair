@@ -16,12 +16,10 @@ from msa_pair.data import msa_processing
 
 def get_uniref_species(description):
     # get TaxID from header information without having to reformat it
-    print(description)
     if '|' in description:
         return str(description.split('|')[2])
     else:
         return ''
-
 
 # def get_uniref_species(description):
 #     temp = description[1:]
