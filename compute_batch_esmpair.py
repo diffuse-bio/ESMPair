@@ -105,7 +105,7 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
         batch_idx = int(batch_folder[batch_folder.rfind('/')+1:])
         sp.call(f"python3 run_esmpair.py {batch_folder}", shell=True)
         msa_upload_mgr.batch_upload()
-        shutil.rmtree(tmp_dir)
+        # shutil.rmtree(tmp_dir)
         
 
 def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num_workers: List[int]):

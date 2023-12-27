@@ -14,20 +14,28 @@ from alphafold.common import residue_constants
 from msa_pair.data import msa_processing
 
 
-
 def get_uniref_species(description):
-    temp = description[1:]
-    if temp.find('TaxID=')!=-1:
-        n_index = temp.index('n=')
-        temp = temp[n_index:].split(maxsplit=1)[-1]
-        TaxID_index = temp.index('TaxID=')
-        Tax,[TaxID,RepID] = temp[:TaxID_index].strip(),temp[TaxID_index:].split()
-        Tax = Tax.split('=')[1]
-        TaxID = int(TaxID.split('=')[1])
-        RepID = RepID.split('=')[1]
-        return str(TaxID)
+    # get TaxID from header information without having to reformat it
+    print(description)
+    if '|' in description:
+        return str(description.split('|')[2])
     else:
         return ''
+
+
+# def get_uniref_species(description):
+#     temp = description[1:]
+#     if temp.find('TaxID=')!=-1:
+#         n_index = temp.index('n=')
+#         temp = temp[n_index:].split(maxsplit=1)[-1]
+#         TaxID_index = temp.index('TaxID=')
+#         Tax,[TaxID,RepID] = temp[:TaxID_index].strip(),temp[TaxID_index:].split()
+#         Tax = Tax.split('=')[1]
+#         TaxID = int(TaxID.split('=')[1])
+#         RepID = RepID.split('=')[1]
+#         return str(TaxID)
+#     else:
+#         return ''
 
 def make_msa_features(msas: Sequence[parsers.Msa]):
     """Constructs a feature dict of MSA features."""
