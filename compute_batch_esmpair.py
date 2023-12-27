@@ -44,7 +44,7 @@ TODOs:
 
 1) sudo docker pull gcr.io/diffuse-370214/esmpair:v0.2
 2) run docker image in interactive mode
-    sudo docker run -it gcr.io/diffuse-370214/esmpair:v0.2
+    sudo docker run -v /home/davian_diffuse_bio/ESMPair:/ESMPair -it gcr.io/diffuse-370214/esmpair:v0.2
 3) test locally inside docker container
     source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python
     pip install google-cloud-storage (added to requirements.txt, but did not rebuild docker image yet)
@@ -66,14 +66,14 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
     # read input txt
     with open(input_txt, 'r') as f:
         input_ppis = f.readlines()
-        input_ppis = [i.strip().split('\t') for i in input_ppis]
+        input_ppis = [i.strip().split('_') for i in input_ppis]
     
     # filter out PPIs that do not have paralogs
     possible_ppis = []
     print(input_ppis)
     for id_A, id_B in input_ppis:
-        blob_A = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_A}.paralog.a3m')
-        blob_B = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_B}.paralog.a3m')
+        blob_A = bucket.blob(f'data/msas/server_msas/esmpair_inputs/{id_A}~{id_B}_1.a3m')
+        blob_B = bucket.blob(f'data/msas/server_msas/esmpair_inputs/{id_A}~{id_B}_2.a3m')
         if blob_A.exists() and blob_B.exists():
             possible_ppis += [f'{id_A}\t{id_B}\n']
                 
@@ -105,7 +105,7 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
         batch_idx = int(batch_folder[batch_folder.rfind('/')+1:])
         sp.call(f"python3 run_esmpair.py {batch_folder}", shell=True)
         msa_upload_mgr.batch_upload()
-        # shutil.rmtree(tmp_dir)
+        # shutil.rmtree(tm_dir)
         
 
 def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num_workers: List[int]):

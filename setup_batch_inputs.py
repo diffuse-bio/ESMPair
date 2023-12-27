@@ -26,13 +26,13 @@ def setup_batch_inputs(input_txt: str, batch_size: int, folder: str):
             subdir_path = f'{folder}/esmpair_out/{c//batch_size}/'
             os.mkdir(subdir_path)
         
-        blob_A = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_A}.paralog.a3m')
-        blob_B = bucket.blob(f'data/msas/server_msas/single_msa_tax/{id_B}.paralog.a3m')
+        blob_A = bucket.blob(f'data/msas/server_msas/esmpair_inputs/{id_A}~{id_B}_1.a3m')
+        blob_B = bucket.blob(f'data/msas/server_msas/esmpair_inputs/{id_A}~{id_B}_2.a3m')
         if blob_A.exists() and blob_B.exists():
             # copy these blobs to subdir_path
-            with open(f'{subdir_path}/{id_A}={id_B}_1.a3m', 'w') as f:
+            with open(f'{subdir_path}/{id_A}~{id_B}_1.a3m', 'w') as f:
                 f.write(blob_A.open('r').read())
-            with open(f'{subdir_path}/{id_A}={id_B}_2.a3m', 'w') as f:
+            with open(f'{subdir_path}/{id_A}~{id_B}_2.a3m', 'w') as f:
                 f.write(blob_B.open('r').read())
 
         c += 1
