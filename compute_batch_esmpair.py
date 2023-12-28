@@ -49,9 +49,7 @@ TODOs:
     source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python
     pip install google-cloud-storage (added to requirements.txt, but did not rebuild docker image yet)
     cd /ESMPair
-    python compute_batch_esmpair.py 0 1 -i test_input.txt
-    
-
+    python compute_batch_esmpair.py 0 1 -i test.txt
 """
 
 PATH_TO_DOCKER_IMG = "gcr.io/diffuse-370214/esmpair:v0.2" 
@@ -66,14 +64,14 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
     # read input txt
     with open(input_txt, 'r') as f:
         input_ppis = f.readlines()
-        input_ppis = [i.strip().split('_') for i in input_ppis]
+        input_ppis = [i.strip().split('~') for i in input_ppis]
     
     # filter out PPIs that do not have paralogs
     possible_ppis = []
     print(input_ppis)
     for id_A, id_B in input_ppis:
-        blob_A = bucket.blob(f'data/msas/server_msas/esmpair_inputs/{id_A}~{id_B}_1.a3m')
-        blob_B = bucket.blob(f'data/msas/server_msas/esmpair_inputs/{id_A}~{id_B}_2.a3m')
+        blob_A = bucket.blob(f'data/msas/server_msas/esmpair_input/{id_A}~{id_B}_1.a3m')
+        blob_B = bucket.blob(f'data/msas/server_msas/esmpair_input/{id_A}~{id_B}_2.a3m')
         if blob_A.exists() and blob_B.exists():
             possible_ppis += [f'{id_A}\t{id_B}\n']
                 
@@ -101,9 +99,12 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
     for batch_folder in subset_seq_batch_folders:
         print(f'Batch number: {batch_folder}')
 
-        msa_upload_mgr = MSAUploadManager(folder=batch_folder, gcs_path='data/msas/server_msas/esmpair/')
+        msa_upload_mgr = MSAUploadManager(folder=batch_folder, gcs_path='data/msas/server_msas/esmpair_output/')
         batch_idx = int(batch_folder[batch_folder.rfind('/')+1:])
         sp.call(f"python3 run_esmpair.py {batch_folder}", shell=True)
+        # remove input *_1.a3m and *_2.a3m files
+        sp.call(f"rm {batch_folder}/*_1.a3m", shell=True)
+        sp.call(f"rm {batch_folder}/*_2.a3m", shell=True)
         msa_upload_mgr.batch_upload()
         # shutil.rmtree(tm_dir)
         
@@ -129,7 +130,7 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num
                                 "imageUri": "{path_to_docker_img}",
                                 "entrypoint": "/bin/bash",
                                 "commands": ["-c",
-                                            " source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python && cd / && gsutil -m cp gs://{gcs_bucket}/workspaces/{workspace} . && tar -xvzf {workspace} && cd ESMPair &&  python compute_batch_esmpair.py  $BATCH_TASK_INDEX $BATCH_TASK_COUNT -i {txt} -b {batch_size}"
+                                            " source ~/.bashrc &&  source /google-cloud-sdk/path.bash.inc && source /google-cloud-sdk/completion.bash.inc &&   export CLOUDSDK_PYTHON=/root/miniconda3/bin/python && cd / && gsutil -m cp gs://{gcs_bucket}/workspaces/{workspace} . && tar -xvzf {workspace} && cd ESMPair/msa_pair && pip install -e . && cd .. && python compute_batch_esmpair.py  $BATCH_TASK_INDEX $BATCH_TASK_COUNT -i {txt} -b {batch_size}"
                                 ]
                                 
 
@@ -138,8 +139,8 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num
                         
                     ],
                     "computeResource": {{
-                        "cpuMilli": 7500,
-                        "memoryMib": 29500
+                        "cpuMilli": 31500,
+                        "memoryMib": 119500
                     }},
                     "maxRetryCount": 1
                 }},
@@ -163,7 +164,7 @@ def return_batch_json(num_workers: int, input_txt: str, batch_size: int): #, num
             "instances": [
                 {{
                     "policy": {{
-                        "machineType": "n1-standard-8",
+                        "machineType": "n1-standard-32",
                         "provisioningModel": "SPOT"
                     }}
                 }}

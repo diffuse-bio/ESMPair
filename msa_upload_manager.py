@@ -59,36 +59,18 @@ class MSAUploadManager:
     def batch_upload(self, depth=0, *args, **kwargs):
         print(f'Looking for output files in {self.folder}...')
         # # on exit -- upload PDB from tmp folder *IF* pdb is not on GCS -- otherwise just download from GCS
-        aln_files = glob.glob(f"{self.folder}/*.aln")
-        a3m_files = glob.glob(f"{self.folder}/*.a3m")
-        a3m_tax_files = glob.glob(f"{self.folder}/*.a3m.tax")
-        if len(aln_files) + len(a3m_files) + len(a3m_tax_files) == 0:
-            logging.warning('NO aln, a3m, or a3m.tax files created -- skipping upload')
+        json_files = glob.glob(f"{self.folder}/*.json")
+        if len(json_files) == 0:
+            logging.warning('NO ajson created -- skipping upload')
         else:
             assert depth == 0
-            if len(aln_files) > 0:
+            if len(json_files) > 0:
                 sp.check_call(
                     f"""
-                    gsutil -m -q cp -r  {self.folder}/*.aln gs://{_GCS_BUCKET}/{self.gcs_path}/
+                    gsutil -m -q cp -r  {self.folder}/*.json gs://{_GCS_BUCKET}/{self.gcs_path}/
                 """,
                     shell=True,
                 )
-            if len(a3m_files) > 0:
-                sp.check_call(
-                    f"""
-                    gsutil -m -q cp -r {self.folder}/*.a3m  gs://{_GCS_BUCKET}/{self.gcs_path}/
-                """,
-                    shell=True,
-                )
-            if len(a3m_tax_files) > 0:
-                sp.check_call(
-                    f"""
-                    gsutil -m -q cp -r {self.folder}/*.a3m.tax  gs://{_GCS_BUCKET}/{self.gcs_path}/
-                """,
-                    shell=True,
-                )
-            
-
 
         # if self.delete_on_exit: #(self.remote_pdb_obj_exists and not self.local) and self.delete_on_exit:
         #     logging.warning('Deleting files locally')

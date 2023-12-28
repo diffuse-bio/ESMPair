@@ -51,23 +51,22 @@ def pair_rows(input_files_dict, src_score_path, dst_pr_path, tag, a3m_file, over
     fh1 = open(a3m_file, "w")
     a_len = len(msa_a_dict['sequences'][0])
     b_len = len(msa_b_dict['sequences'][0])
-    zero_hdr = f'> {msa_a_dict["descriptions"][0]}  a_seq_n={a_len} {msa_b_dict["descriptions"][0]}  b_seq_len={b_len}' 
+    zero_hdr = f'>{msa_a_dict["descriptions"][0]}_{msa_b_dict["descriptions"][0]}' 
     zero_seq = msa_a_dict['sequences'][0] + msa_b_dict['sequences'][0]
     fh1.write(zero_hdr+"\n")
     fh1.write(zero_seq+"\n")
-    for i in range(len(pr_idx_a_list)):
+    
+    for i in range(len(pr_idx_a_list)-1): # why is this reversed? also, subtract 1 to avoid re-inserting the original ppi
         msa_a_hdr_dict = num_key_seq_scores["A"][str(pr_idx_a_list[i])]
         msa_b_hdr_dict = num_key_seq_scores["B"][str(pr_idx_b_list[i])]
-        comb_hdr_str = "> "+msa_a_hdr_dict["description"] +f'  a_scr = {msa_a_hdr_dict["score"]:.4f} '
-        comb_hdr_str = comb_hdr_str + f'{ msa_b_hdr_dict["description"]}  b_scr = {msa_b_hdr_dict["score"]:.4f} '
-        comb_hdr_str = comb_hdr_str + msa_a_dict['descriptions'][pr_idx_a_list[i]] + '  ' + msa_b_dict['descriptions'][pr_idx_b_list[i]] 
+        
+        assert msa_a_hdr_dict['description'].split('|')[1] == msa_b_hdr_dict['description'].split('|')[1] # assert the species are the same
+        comb_hdr_str = f">{msa_a_hdr_dict['description'].split('|')[0]}_{msa_b_hdr_dict['description'].split('|')[0]}|{msa_a_hdr_dict['description'].split('|')[1]}"
         comb_seq = msa_a_dict['sequences'][pr_idx_a_list[i]] + msa_b_dict['sequences'][pr_idx_b_list[i]]
         fh1.write(comb_hdr_str+"\n")
         fh1.write(comb_seq+"\n")
+        
     fh1.close()
-
-    with open(dst_pr_path, 'wt') as fh:
-        json.dump(paired_rows_dict, fh, indent=4)
 
 
 def process(input_dir, src_pr_path, dst_path, overwrite=False):
@@ -171,11 +170,10 @@ if __name__ == '__main__':
         }
 
         # calculate and save the column attention score - aggregate
-        score_path = out_dir.joinpath(f'{file_p}_{tag}_scores_{max_per_msa}.json')
+        score_path = out_dir.joinpath(f'{file_p}.json')
         if not os.path.exists(score_path):
             compute_scores(in_files_dict, score_path, tag, int(max_per_msa))
         
-        # 
-        pr_path = out_dir.joinpath(f'{file_p}_{tag}_pr_{max_per_msa}.json')
-        if not os.path.exists(pr_path):
-            pair_rows(in_files_dict, score_path, pr_path, tag, a3m_fn)
+        # pr_path = out_dir.joinpath(f'{file_p}_{tag}_pr_{max_per_msa}.json')
+        # if not os.path.exists(pr_path):
+        #     pair_rows(in_files_dict, score_path, pr_path, tag, a3m_fn)
