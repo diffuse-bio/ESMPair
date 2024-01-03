@@ -68,7 +68,6 @@ def compute_single_esmpair(worker_idx: int, num_workers: int, input_txt: str, ba
     
     # filter out PPIs that do not have paralogs
     possible_ppis = []
-    print(input_ppis)
     for id_A, id_B in input_ppis:
         blob_A = bucket.blob(f'data/msas/server_msas/esmpair_input/{id_A}~{id_B}_1.a3m')
         blob_B = bucket.blob(f'data/msas/server_msas/esmpair_input/{id_A}~{id_B}_2.a3m')

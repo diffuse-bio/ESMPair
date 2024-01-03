@@ -26,6 +26,28 @@ def compute_scores(input_files_dict, out_score_file_path, tag, max_num_msas, is_
     with open(out_score_file_path, 'wt') as fh:
         json.dump(sequences_scores, fh, indent=4, sort_keys=True)
 
+# revert pair_rows() to the original version
+def pair_rows_og(input_files_dict, src_score_path, dst_pr_path, tag, overwrite=False):
+
+    with open(src_score_path) as fh:
+        sequences_scores = json.load(fh)
+
+    species_dict, msas_dict, _, _ = species_processing.pair_species(
+        input_files_dict
+#         # input_dir, names=['uniprot.a3m'], chain_ids=['A', 'B']
+    )
+    paired_rows_dict = row_processing.create_paired_rows_dict(
+        species_dict, msas_dict, sequences_scores
+    )
+    # print(paired_rows_dict)
+    # print(paired_rows_dict["A"])
+    # print(paired_rows_dict["A"][:10])
+    # print(paired_rows_dict["B"][:10])
+    # exit()
+
+    with open(dst_pr_path, 'wt') as fh:
+        json.dump(paired_rows_dict, fh, indent=4)
+
 
 def pair_rows(input_files_dict, src_score_path, dst_pr_path, tag, a3m_file, overwrite=False):
 
@@ -174,6 +196,9 @@ if __name__ == '__main__':
         if not os.path.exists(score_path):
             compute_scores(in_files_dict, score_path, tag, int(max_per_msa))
         
-        # pr_path = out_dir.joinpath(f'{file_p}_{tag}_pr_{max_per_msa}.json')
-        # if not os.path.exists(pr_path):
-        #     pair_rows(in_files_dict, score_path, pr_path, tag, a3m_fn)
+        pr_path = out_dir.joinpath(f'{file_p}_{tag}_pr_{max_per_msa}.json')
+        pair_rows(in_files_dict, score_path, pr_path, tag, a3m_fn)
+
+        pr_path = out_dir.joinpath(f'{file_p}_{tag}_pr_og_{max_per_msa}.json')
+        pair_rows_og(in_files_dict, score_path, pr_path, tag, a3m_fn)
+        
