@@ -1,0 +1,536 @@
+{
+    "A": {
+        "0": {
+            "block_num": -1,
+            "description": "Q22289",
+            "score": 1000000.0
+        },
+        "102": {
+            "block_num": 1,
+            "description": "E3LWE8|Caenorhabditis_remanei|31234|1.182E-25|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.781834602355957
+        },
+        "105": {
+            "block_num": 1,
+            "description": "A0A6A5HY80|Caenorhabditis_remanei|31234|1.286E-15|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.4412879943847656
+        },
+        "109": {
+            "block_num": 1,
+            "description": "A0A6A5H5U6|Caenorhabditis_remanei|31234|1.373E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.5729527473449707
+        },
+        "110": {
+            "block_num": 1,
+            "description": "E3LWL1|Caenorhabditis_remanei|31234|1.373E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.5641136169433594
+        },
+        "112": {
+            "block_num": 1,
+            "description": "E3NH10|Caenorhabditis_remanei|31234|1.563E-16|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 3.058258056640625
+        },
+        "117": {
+            "block_num": 1,
+            "description": "E3MIV8|Caenorhabditis_remanei|31234|1.832E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.8566317558288574
+        },
+        "118": {
+            "block_num": 1,
+            "description": "A0A261B4G0|Caenorhabditis_remanei|31234|1.865E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 4.905087947845459
+        },
+        "119": {
+            "block_num": 1,
+            "description": "A0A6A5HVE7|Caenorhabditis_remanei|31234|1.891E-17|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.4306957721710205
+        },
+        "121": {
+            "block_num": 1,
+            "description": "A0A6A5HSG5|Caenorhabditis_remanei|31234|2.013E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.4397592544555664
+        },
+        "129": {
+            "block_num": 1,
+            "description": "E3NC47|Caenorhabditis_remanei|31234|2.486E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.6826398372650146
+        },
+        "131": {
+            "block_num": 1,
+            "description": "E3NKH1|Caenorhabditis_remanei|31234|2.727E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 5.13783597946167
+        },
+        "132": {
+            "block_num": 1,
+            "description": "A0A2P4VUH2|Caenorhabditis_remanei|31234|2.850E-21|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.588587522506714
+        },
+        "133": {
+            "block_num": 1,
+            "description": "A0A6A5HN91|Caenorhabditis_remanei|31234|2.930E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 3.2982263565063477
+        },
+        "134": {
+            "block_num": 1,
+            "description": "A0A261B4H4|Caenorhabditis_remanei|31234|2.930E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.5858469009399414
+        },
+        "135": {
+            "block_num": 1,
+            "description": "E3MIW0|Caenorhabditis_remanei|31234|2.930E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.772345542907715
+        },
+        "136": {
+            "block_num": 1,
+            "description": "A0A6A5H5V2|Caenorhabditis_remanei|31234|3.064E-80|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 14.698206901550293
+        },
+        "14": {
+            "block_num": 1,
+            "description": "A0A016V0U3|Ancylostoma_ceylanicum|53326|3.080E-18|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Strongylida;-_Ancylostomatoidea;f_Ancylostomatidae;-_Ancylostomatinae;g_Ancylostoma;s_Ancylostoma_ceylanicum",
+            "score": 6.5331854820251465
+        },
+        "141": {
+            "block_num": 1,
+            "description": "A0A260Z7D6|Caenorhabditis_remanei|31234|3.373E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 5.281983852386475
+        },
+        "142": {
+            "block_num": 1,
+            "description": "A0A2P4V8I7|Caenorhabditis_remanei|31234|3.373E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.590379238128662
+        },
+        "143": {
+            "block_num": 1,
+            "description": "A0A260ZZ96|Caenorhabditis_remanei|31234|3.459E-17|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.161141872406006
+        },
+        "144": {
+            "block_num": 1,
+            "description": "E3N944|Caenorhabditis_remanei|31234|3.693E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.256500244140625
+        },
+        "147": {
+            "block_num": 1,
+            "description": "A0A6A5HPL6|Caenorhabditis_remanei|31234|3.977E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 3.005997657775879
+        },
+        "148": {
+            "block_num": 1,
+            "description": "E3MJ11|Caenorhabditis_remanei|31234|3.977E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.9589803218841553
+        },
+        "150": {
+            "block_num": 1,
+            "description": "A0A261B310|Caenorhabditis_remanei|31234|4.031E-25|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.5871686935424805
+        },
+        "152": {
+            "block_num": 1,
+            "description": "A0A2P4VE86|Caenorhabditis_remanei|31234|4.140E-68|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 9.720876693725586
+        },
+        "153": {
+            "block_num": 1,
+            "description": "E3LZA2|Caenorhabditis_remanei|31234|4.140E-68|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 9.627273559570312
+        },
+        "155": {
+            "block_num": 1,
+            "description": "A0A6A5H5W3|Caenorhabditis_remanei|31234|4.169E-18|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.9052584171295166
+        },
+        "156": {
+            "block_num": 1,
+            "description": "A0A261A393|Caenorhabditis_remanei|31234|4.195E-80|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 14.89737606048584
+        },
+        "159": {
+            "block_num": 1,
+            "description": "A0A6A5H6C6|Caenorhabditis_remanei|31234|4.576E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.7308967113494873
+        },
+        "16": {
+            "block_num": 1,
+            "description": "A0A0D6LND4|Ancylostoma_ceylanicum|53326|6.348E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Strongylida;-_Ancylostomatoidea;f_Ancylostomatidae;-_Ancylostomatinae;g_Ancylostoma;s_Ancylostoma_ceylanicum",
+            "score": 7.121831893920898
+        },
+        "161": {
+            "block_num": 1,
+            "description": "E3N363|Caenorhabditis_remanei|31234|5.001E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 4.878546714782715
+        },
+        "166": {
+            "block_num": 1,
+            "description": "A0A6A5H077|Caenorhabditis_remanei|31234|5.399E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 5.2277021408081055
+        },
+        "169": {
+            "block_num": 1,
+            "description": "E3LWG7|Caenorhabditis_remanei|31234|5.477E-25|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 3.2686264514923096
+        },
+        "172": {
+            "block_num": 1,
+            "description": "E3NH11|Caenorhabditis_remanei|31234|5.974E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.9079275131225586
+        },
+        "173": {
+            "block_num": 1,
+            "description": "A0A260YXH6|Caenorhabditis_remanei|31234|6.024E-49|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 9.205011367797852
+        },
+        "174": {
+            "block_num": 1,
+            "description": "A0A261B2K8|Caenorhabditis_remanei|31234|6.208E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.7194559574127197
+        },
+        "176": {
+            "block_num": 1,
+            "description": "A0A2P4VLT2|Caenorhabditis_remanei|31234|7.328E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.9432311058044434
+        },
+        "177": {
+            "block_num": 1,
+            "description": "A0A261B3E9|Caenorhabditis_remanei|31234|7.328E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 3.272473096847534
+        },
+        "181": {
+            "block_num": 1,
+            "description": "E3NH09|Caenorhabditis_remanei|31234|8.095E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.7006921768188477
+        },
+        "182": {
+            "block_num": 1,
+            "description": "E3LYA9|Caenorhabditis_remanei|31234|8.422E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.8920159339904785
+        },
+        "183": {
+            "block_num": 1,
+            "description": "A0A261AJR6|Caenorhabditis_remanei|31234|8.422E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.6183278560638428
+        },
+        "184": {
+            "block_num": 1,
+            "description": "A0A6A5HIU1|Caenorhabditis_remanei|31234|8.422E-22|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.7931125164031982
+        },
+        "186": {
+            "block_num": 1,
+            "description": "E3NH04|Caenorhabditis_remanei|31234|9.171E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 5.087299346923828
+        },
+        "227": {
+            "block_num": 1,
+            "description": "A0A0N4VPH3|Enterobius_vermicularis|51028|1.014E-26|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Enterobius;s_Enterobius_vermicularis",
+            "score": 5.939988136291504
+        },
+        "229": {
+            "block_num": 1,
+            "description": "A0A0N4VFI1|Enterobius_vermicularis|51028|3.463E-26|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Enterobius;s_Enterobius_vermicularis",
+            "score": 5.944950103759766
+        },
+        "375": {
+            "block_num": 1,
+            "description": "A0A7E5A1E6|Panagrellus_redivivus|6233|1.771E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Tylenchina;-_Panagrolaimomorpha;-_Panagrolaimoidea;f_Panagrolaimidae;g_Panagrellus;s_Panagrellus_redivivus",
+            "score": 4.477712154388428
+        },
+        "376": {
+            "block_num": 1,
+            "description": "A0A7E4WBU5|Panagrellus_redivivus|6233|2.346E-15|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Tylenchina;-_Panagrolaimomorpha;-_Panagrolaimoidea;f_Panagrolaimidae;g_Panagrellus;s_Panagrellus_redivivus",
+            "score": 9.152069091796875
+        },
+        "41": {
+            "block_num": 1,
+            "description": "A0A1I7SUF4|Bursaphelenchus_xylophilus|6326|3.865E-21|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Tylenchina;-_Tylenchomorpha;-_Aphelenchoidea;f_Aphelenchoididae;g_Bursaphelenchus;s_Bursaphelenchus_xylophilus",
+            "score": 5.94567346572876
+        },
+        "426": {
+            "block_num": 1,
+            "description": "A0A0N5A954|Syphacia_muris|451379|2.152E-29|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Syphacia;s_Syphacia_muris",
+            "score": 6.673145294189453
+        },
+        "427": {
+            "block_num": 1,
+            "description": "A0A0N5AMV4|Syphacia_muris|451379|2.965E-27|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Syphacia;s_Syphacia_muris",
+            "score": 8.948229789733887
+        },
+        "429": {
+            "block_num": 1,
+            "description": "A0A158R516|Syphacia_muris|451379|3.865E-21|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Syphacia;s_Syphacia_muris",
+            "score": 4.170328617095947
+        },
+        "432": {
+            "block_num": 1,
+            "description": "A0A2G9U1F2|Teladorsagia_circumcincta|45464|2.485E-30|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Strongylida;-_Trichostrongyloidea;f_Haemonchidae;g_Teladorsagia;s_Teladorsagia_circumcincta",
+            "score": 10.811665534973145
+        },
+        "44": {
+            "block_num": 1,
+            "description": "G0MM26|Caenorhabditis_brenneri|135651|1.744E-05|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 5.596163749694824
+        },
+        "442": {
+            "block_num": 1,
+            "description": "A0A0N5CVX9|Thelazia_callipaeda|103827|2.930E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Spiruromorpha;-_Thelazioidea;f_Thelaziidae;g_Thelazia;s_Thelazia_callipaeda",
+            "score": 3.773469924926758
+        },
+        "444": {
+            "block_num": 1,
+            "description": "A0A0N5D8M4|Thelazia_callipaeda|103827|9.171E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Spiruromorpha;-_Thelazioidea;f_Thelaziidae;g_Thelazia;s_Thelazia_callipaeda",
+            "score": 8.484225273132324
+        },
+        "446": {
+            "block_num": 1,
+            "description": "A0A183UDI7|Toxocara_canis|6265|2.670E-35|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Ascaridomorpha;-_Ascaridoidea;f_Toxocaridae;g_Toxocara;s_Toxocara_canis",
+            "score": 6.31097412109375
+        },
+        "447": {
+            "block_num": 1,
+            "description": "A0A0B2UVB6|Toxocara_canis|6265|3.068E-12|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Ascaridomorpha;-_Ascaridoidea;f_Toxocaridae;g_Toxocara;s_Toxocara_canis",
+            "score": 8.760163307189941
+        },
+        "448": {
+            "block_num": 1,
+            "description": "A0A0B2VKE9|Toxocara_canis|6265|3.640E-35|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Ascaridomorpha;-_Ascaridoidea;f_Toxocaridae;g_Toxocara;s_Toxocara_canis",
+            "score": 6.391077041625977
+        },
+        "449": {
+            "block_num": 1,
+            "description": "A0A0B2VMQ3|Toxocara_canis|6265|6.348E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Ascaridomorpha;-_Ascaridoidea;f_Toxocaridae;g_Toxocara;s_Toxocara_canis",
+            "score": 3.8904807567596436
+        },
+        "45": {
+            "block_num": 1,
+            "description": "G0NVA9|Caenorhabditis_brenneri|135651|1.744E-05|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 6.268517017364502
+        },
+        "46": {
+            "block_num": 1,
+            "description": "G0MLI6|Caenorhabditis_brenneri|135651|1.771E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 7.736617088317871
+        },
+        "47": {
+            "block_num": 1,
+            "description": "G0NVB0|Caenorhabditis_brenneri|135651|2.328E-05|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 6.196360111236572
+        },
+        "49": {
+            "block_num": 1,
+            "description": "G0N3I8|Caenorhabditis_brenneri|135651|5.399E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 5.204377174377441
+        },
+        "50": {
+            "block_num": 1,
+            "description": "G0MLF4|Caenorhabditis_brenneri|135651|6.054E-60|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 21.76883888244629
+        },
+        "52": {
+            "block_num": 1,
+            "description": "G0N4T2|Caenorhabditis_brenneri|135651|9.171E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 5.168342113494873
+        },
+        "55": {
+            "block_num": 1,
+            "description": "A0A261BNB5|Caenorhabditis_latens|1503980|1.771E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 3.6921627521514893
+        },
+        "56": {
+            "block_num": 1,
+            "description": "A0A260ZXX3|Caenorhabditis_latens|1503980|1.771E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 3.6757428646087646
+        },
+        "57": {
+            "block_num": 1,
+            "description": "A0A261BFQ2|Caenorhabditis_latens|1503980|2.013E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 3.187039613723755
+        },
+        "62": {
+            "block_num": 1,
+            "description": "A0A261BPQ3|Caenorhabditis_latens|1503980|4.610E-69|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 10.927559852600098
+        },
+        "63": {
+            "block_num": 1,
+            "description": "A0A261A2W7|Caenorhabditis_latens|1503980|5.477E-25|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 3.153085231781006
+        },
+        "66": {
+            "block_num": 1,
+            "description": "A0A261C480|Caenorhabditis_latens|1503980|8.620E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 3.209690570831299
+        },
+        "67": {
+            "block_num": 1,
+            "description": "A0A260ZGJ4|Caenorhabditis_latens|1503980|8.620E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 3.746814012527466
+        },
+        "70": {
+            "block_num": 1,
+            "description": "A0A2G5USJ5|Caenorhabditis_nigoni|1611254|1.398E-17|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 7.305440902709961
+        },
+        "71": {
+            "block_num": 1,
+            "description": "A0A2G5SZV3|Caenorhabditis_nigoni|1611254|1.420E-14|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.036965847015381
+        },
+        "73": {
+            "block_num": 1,
+            "description": "A0A2G5US23|Caenorhabditis_nigoni|1611254|1.681E-18|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.996239185333252
+        },
+        "74": {
+            "block_num": 1,
+            "description": "A0A2G5V8K5|Caenorhabditis_nigoni|1611254|1.737E-15|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.4809980392456055
+        },
+        "75": {
+            "block_num": 1,
+            "description": "A0A2G5V7F8|Caenorhabditis_nigoni|1611254|1.771E-20|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 5.068735599517822
+        },
+        "76": {
+            "block_num": 1,
+            "description": "A0A2G5SCE3|Caenorhabditis_nigoni|1611254|1.870E-37|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 11.38028621673584
+        },
+        "78": {
+            "block_num": 1,
+            "description": "A0A2G5VD84|Caenorhabditis_nigoni|1611254|2.013E-19|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 5.0177083015441895
+        },
+        "81": {
+            "block_num": 1,
+            "description": "A0A2G5T061|Caenorhabditis_nigoni|1611254|2.346E-15|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.199451446533203
+        },
+        "86": {
+            "block_num": 1,
+            "description": "A0A2G5V8F1|Caenorhabditis_nigoni|1611254|6.326E-17|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.332054138183594
+        },
+        "87": {
+            "block_num": 1,
+            "description": "A0A2G5URT9|Caenorhabditis_nigoni|1611254|6.348E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 7.702498435974121
+        },
+        "88": {
+            "block_num": 1,
+            "description": "A0A2G5SQD2|Caenorhabditis_nigoni|1611254|7.047E-16|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.6741204261779785
+        },
+        "89": {
+            "block_num": 1,
+            "description": "A0A2G5V6Y1|Caenorhabditis_nigoni|1611254|7.107E-21|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 6.188237190246582
+        },
+        "90": {
+            "block_num": 1,
+            "description": "A0A2G5UJ64|Caenorhabditis_nigoni|1611254|7.328E-23|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 5.010226249694824
+        },
+        "91": {
+            "block_num": 1,
+            "description": "A0A2G5US81|Caenorhabditis_nigoni|1611254|7.635E-18|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.450732707977295
+        },
+        "92": {
+            "block_num": 1,
+            "description": "A0A2G5US38|Caenorhabditis_nigoni|1611254|7.635E-18|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 4.312041759490967
+        },
+        "94": {
+            "block_num": 1,
+            "description": "A0A2G5T1U8|Caenorhabditis_nigoni|1611254|9.568E-33|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 10.612017631530762
+        },
+        "96": {
+            "block_num": 1,
+            "description": "A0A6A5H6S9|Caenorhabditis_remanei|31234|1.011E-24|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.6566596031188965
+        },
+        "99": {
+            "block_num": 1,
+            "description": "E3N943|Caenorhabditis_remanei|31234|1.033E-17|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 2.67460560798645
+        }
+    },
+    "B": {
+        "0": {
+            "block_num": -1,
+            "description": "Q23045",
+            "score": 1000000.0
+        },
+        "211": {
+            "block_num": 1,
+            "description": "A0A7E4VZ66|Panagrellus_redivivus|6233|2.081E-63|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Tylenchina;-_Panagrolaimomorpha;-_Panagrolaimoidea;f_Panagrolaimidae;g_Panagrellus;s_Panagrellus_redivivus",
+            "score": 14.819977760314941
+        },
+        "212": {
+            "block_num": 1,
+            "description": "A0A7E4ZZF3|Panagrellus_redivivus|6233|2.346E-66|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Tylenchina;-_Panagrolaimomorpha;-_Panagrolaimoidea;f_Panagrolaimidae;g_Panagrellus;s_Panagrellus_redivivus",
+            "score": 15.697712898254395
+        },
+        "23": {
+            "block_num": 1,
+            "description": "A0A0D6M8U4|Ancylostoma_ceylanicum|53326|6.828E-96|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Strongylida;-_Ancylostomatoidea;f_Ancylostomatidae;-_Ancylostomatinae;g_Ancylostoma;s_Ancylostoma_ceylanicum",
+            "score": 19.045658111572266
+        },
+        "245": {
+            "block_num": 1,
+            "description": "A0A0N5AGS6|Syphacia_muris|451379|2.121E-72|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Syphacia;s_Syphacia_muris",
+            "score": 16.63091278076172
+        },
+        "248": {
+            "block_num": 1,
+            "description": "A0A2G9UY47|Teladorsagia_circumcincta|45464|5.369E-72|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Strongylida;-_Trichostrongyloidea;f_Haemonchidae;g_Teladorsagia;s_Teladorsagia_circumcincta",
+            "score": 19.80874252319336
+        },
+        "252": {
+            "block_num": 1,
+            "description": "A0A0N5CL59|Thelazia_callipaeda|103827|1.359E-71|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Spiruromorpha;-_Thelazioidea;f_Thelaziidae;g_Thelazia;s_Thelazia_callipaeda",
+            "score": 17.95188331604004
+        },
+        "253": {
+            "block_num": 1,
+            "description": "A0A0B2UNJ4|Toxocara_canis|6265|8.300E-80|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Ascaridomorpha;-_Ascaridoidea;f_Toxocaridae;g_Toxocara;s_Toxocara_canis",
+            "score": 18.596466064453125
+        },
+        "40": {
+            "block_num": 1,
+            "description": "A0A7I8WIK4|Bursaphelenchus_xylophilus|6326|5.387E-55|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Tylenchina;-_Tylenchomorpha;-_Aphelenchoidea;f_Aphelenchoididae;g_Bursaphelenchus;s_Bursaphelenchus_xylophilus",
+            "score": 19.881103515625
+        },
+        "42": {
+            "block_num": 1,
+            "description": "G0M6I1|Caenorhabditis_brenneri|135651|8.288E-225|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_brenneri",
+            "score": 34.22395324707031
+        },
+        "44": {
+            "block_num": 1,
+            "description": "A0A261CSR9|Caenorhabditis_latens|1503980|2.554E-248|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_latens",
+            "score": 27.13495635986328
+        },
+        "46": {
+            "block_num": 1,
+            "description": "A0A2G5SUG5|Caenorhabditis_nigoni|1611254|2.395E-197|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_nigoni",
+            "score": 29.280517578125
+        },
+        "50": {
+            "block_num": 1,
+            "description": "A0A6A5G095|Caenorhabditis_remanei|31234|3.500E-248|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Rhabditina;-_Rhabditomorpha;-_Rhabditoidea;f_Rhabditidae;-_Peloderinae;g_Caenorhabditis;s_Caenorhabditis_remanei",
+            "score": 27.239707946777344
+        },
+        "85": {
+            "block_num": 1,
+            "description": "A0A3P6HAM2|Enterobius_vermicularis|51028|1.845E-56|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Enterobius;s_Enterobius_vermicularis",
+            "score": 13.716238975524902
+        },
+        "87": {
+            "block_num": 1,
+            "description": "A0A0N4USY6|Enterobius_vermicularis|51028|9.985E-57|-_cellular_organisms;d_Eukaryota;-_Opisthokonta;k_Metazoa;-_Eumetazoa;-_Bilateria;-_Protostomia;-_Ecdysozoa;p_Nematoda;c_Chromadorea;o_Rhabditida;-_Spirurina;-_Oxyuridomorpha;-_Oxyuroidea;f_Oxyuridae;g_Enterobius;s_Enterobius_vermicularis",
+            "score": 13.863492012023926
+        }
+    }
+}
